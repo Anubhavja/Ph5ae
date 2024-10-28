@@ -1,0 +1,271 @@
+<html>
+<head>
+  <title>PHA5E LTD</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: white;
+    }
+    .header img {
+      height: 50px;
+    }
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+    }
+    .nav a.active {
+      color: red;
+    }
+    .hero {
+      background-color: #d1b17e;
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 50px;
+      font-weight: 800;
+      margin: 0;
+    }
+    .hero-text p {
+      font-size: 20px;
+      margin: 20px 10px;
+    }
+    .hero-text .number {
+      color: red;}
+    .hero-text button {
+      padding: 20px 30px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .hero-text button:hover {background-color:rgb(26, 133, 196)}
+    .hero img {
+      max-width: 40%;
+      height: auto;
+    }
+    .content {
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .content img {
+      max-width: 40%;
+      height: auto;
+    }
+    .content-text {
+      max-width: 50%;
+    }
+    .content-text h2 {
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .content-text p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .sec {
+      background-color: black;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sec button {
+      padding: 10px 20px;
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .sec button:hover {background-color:black}
+    .sec button:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 88;
+      transition: 5s;
+    }
+    .testimonial {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .testimonial i {
+      font-size: 50px;
+      color: #e0e0e0;
+    }
+    .testimonial p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #666666;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .testimonial .author {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .testimonial .author img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .testimonial .author .name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+    }
+    .testimonial .author .title {
+      font-size: 14px;
+      color: #999999;
+    }
+    .footer {
+      background-color: #222222;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .header {
+        padding: 15px 30px;
+      }
+      .hero {
+        padding: 30px 20px;
+        flex-direction: column;
+      }
+      .hero-text, .hero img {
+        max-width: 100%;
+        text-align: center;
+      }
+      .hero-text h1 {
+        font-size: 36px;
+      }
+      .content {
+        padding: 30px 20px;
+        flex-direction: column;
+      }
+      .content-text, .content img {
+        max-width: 100%;
+      }
+      .content-text h2 {
+        font-size: 22px;
+      }
+      .sec {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header {
+        padding: 10px 15px;
+      }
+      .hero-text h1 {
+        font-size: 28px;
+      }
+      .hero-text p, .content-text p {
+        font-size: 16px;
+      }
+      .testimonial p {
+        font-size: 16px;
+        padding: 0 10px;
+      }
+      .testimonial .author {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#"><img alt="PHA5E LTD Logo" height="70" src="logo (2).png" width="150"/></a>
+    <div class="nav">
+      <a class="active" href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-text">
+      <h1><b>Pioneering Modern Construction with Decades of Expertise.</b></h1>
+      <p>PHA<span class="number">5</span>E: Where innovation meets precision delivering unmatched quality and assurance in every build.</p>
+      <button>Discover Our Services</button>
+    </div>
+    <img alt="Construction Helmet and Blueprints" src="cont1.png"/>
+  </div>
+  <div class="content">
+    <img alt="Construction Site" src="cont2.png"/>
+    <div class="content-text">
+      <h2>Who Are We?</h2>
+      <p>PHA5E is a family run business with recognised abilities.</p>
+      <p>An inspired venture grown from a background of extensive construction management experience, combined with lessons learned on large scale projects enabling us to provide high quality completion, in the identified fields.</p>
+      <p>Our values are transparent. Client centred and seamless services, assuring you can trust our work, allowing the results to represent themselves.</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-text">
+      <h2>Vision & Mission</h2>
+      <p>We aim to provide top-notch building solutions, combining our long experience with modern technology. Every project we take on shows our commitment to doing excellent work, making our clients happy, and creating lasting, good-quality buildings.</p>
+    </div>
+    <img alt="Construction Site" src="cont3.png"/>
+  </div>
+  <div class="sec">
+    <p><b>Call today on 07572 663018</b></p>
+    <button>Get in Touch</button>
+  </div>
+  <div class="testimonial">
+    <i class="fas fa-quote-left"></i>
+    <p>Mark Jarman is the sort of Project Manager every project craves, a Project Manager that delivered real quality on a tight programme. Very Client facing and gets the best out of his team. A credit to the Construction Industry where these sort of PMs are a dying breed. Mark Jarman is the sort of Project Manager every project craves, a Project Manager that delivered real quality on a tight programme. Very Client facing and gets the best out of his team. A credit to the Construction Industry where these sort of PMs are a dying breed.</p>
+    <div class="author">
+      <img alt="Portrait of Morgan Lewis" src="https://storage.googleapis.com/a1aa/image/JRYKW7f4v1zlCyQX81JmnupYJpEkZHOJj48fMg7M8CfpmtWnA.jpg"/>
+      <div>
+        <div class="name">Morgan Lewis MCIOB MWIWM</div>
+        <div class="title">Chartered Construction Manager - Development Manager</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>© 2024 PHA5E LTD</span>
+    <a href="#">Privacy Policy & Cookies</a>
+  </div>
+</body>
+</html>
